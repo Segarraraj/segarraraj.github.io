@@ -1,1 +1,2 @@
-# segarraraj.github.io
+# Segarraraj portfolio
+Repository created to make my personal portfolio.
