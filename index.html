@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="resources/css/styles.css">
     <script src="https://kit.fontawesome.com/a3c4993b30.js" crossorigin="anonymous"></script>
-    <script src="resources/js/main.js"></script>
 </head>
 <body>
     <div class="header">
@@ -20,13 +19,41 @@
             <h2>I program games</h2>
         </div>
         <hr>
-        <span class="fa-stack" onclick="scrollToSection('navbar')">
+        <span class="fa-stack" onclick="ScrollToSection('navbar')">
             <i class="far fa-circle fa-stack-2x"></i>
             <i class="fas fa-chevron-down fa-stack-1x"></i>
         </span>
     </div>
     <div id="content">
+        <nav id="navbar">
+            <ul>
+                <li><a onclick="ScrollToSection('me')">Me</a></li>
+                <li><a onclick="ScrollToSection('work')">Work</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div id="me">
+            <div>
+                <h1>My name is Jorge Segarra</h1>
+                <img src="resources/img/me.jpg" alt="Me">
+                <h2><i>I have been programing for the last 6 years.</i></h2>
+                <p>I started studying at a professional training course, where I learned different languages and skills such as Java, SQL, Objective C or c#. After a year and a half studying there and three months as an intern in a small company, I got my first job where I worked as an intern.</p>
+                <p>During the year working at that company, I learned improved my previous skills and learned many new others. I worked mainly as a back-end and full-stack developer, but I also did small projects such as an Android APP to connect with their server.</p>
+                <p>Finally, I moved to ESAT where I'm currently. During my pass through ESAT I have learned new and interesting things, from learning C, C++ or Assembly to learning how 3D Renderers work and making our own game engine.</p>
+                <div class="social-media">
+                    <a href="https://twitter.com/SalamandroxFTW"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/jorge-segarra-raro-a7806b166"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Segarraraj"><i class="fab fa-github-square"></i></a>
+                    <a href="mailto:jsegra9@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                </div>
+            </div>
+            <hr>
+        </div>
 
+        <div id="work">
+
+        </div>
     </div>
+    <script src="resources/js/main.js"></script>
 </body>
 </html>
