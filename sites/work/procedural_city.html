@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Christmas Origin</title>
+    <title>Procedural City</title>
     <meta charset="UTF-8">
     <meta name="description" content="Jorge Segarra Portfolio">
     <meta name="keywords" content="Jorge, Segarra, Portfolio">
@@ -18,7 +18,7 @@
 <body>
     <div id="content">
         <div class="section-header">
-            <h1>Christmas Origin</h1>
+            <h1>C++ Procedural City</h1>
         </div>
         <nav id="navbar">
             <ul>
@@ -30,18 +30,16 @@
         <div class="work-content">
           <article>
                 <p>
-                    The goal of Christmas Origin was to make a 3D Platformer for a project in one of the subjects of our second year at ESAT.
-                    The team was formed by me and other 2 programmers. And the visual art and sounds were from free packs on the internet.
+                    We did this project for a subject at the second year of ESAT, the aim of the project was to create a 3D Procedural city with a 3d framework given by the ESAT while also modifying some parts of the engine with our own code, and making the neded shaders to light up the scene.
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WJRz3ND-ONc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/655I3RTimW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
-                    I was mostly in charge of the UI (I would say thay my UI/UX skills have improved since there) and ther procedural mode.
-                    The rules to create the procedural map were quite simple, just pick random pieces from a given pool without turning more than 90 degrees of the original rotation.
-                    And the mode itslef was also simple, there was a ball behind you that was slightly slower than you, the tiles touched by that ball were hidden and new ones were moved and showed at the tip of the map.
+                    One of the first tasks to acomplish in the project was to program an algorithm to create the city procedurally, my teammate <a class="mention" href="">Marcos Briz</a> that was mostly in charge of that did a fabulous job on that. After that, we had a big city without any color or texture, so ww had to start making the materials fo fill the city with colors.
                 </p>
                 <p>
-                    While I was doing the procedural map and UI, my teammate <a class="mention" href="">Mikel Mondragon</a> was in charge of the AI/traps and the Character movement, meanwhile <a class="mention" href="">Borja Serrano</a> was focused on making puzzles in a more design driven map.
+                    While making the materials, the major problem we faced was that we just had the data of the geometry that the engine gave to us, and that data didn't included the tangents and bitangents. To solve that we added a Geometry Shader to our pipeline to calculate the tangents and bitangents of each face every time we drew something, we knew that that wasn't the best place for doing that, but it was a good excuse to learn a bit more of Geometry Shaders which we didn't have prior experience with them.
                 </p>
+            </br>
             </article>
         </div>   
         <div id="footer">
