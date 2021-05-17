@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jorge Segarra - Procedural City</title>
+    <title>Jorge Segarra - RTS Online</title>
     <meta charset="UTF-8">
     <meta name="description" content="Jorge Segarra Portfolio">
     <meta name="keywords" content="Jorge, Segarra, Portfolio">
@@ -18,7 +18,7 @@
 <body>
     <div id="content">
         <div class="section-header">
-            <h1>C++ Procedural City</h1>
+            <h1>RTS Online</h1>
         </div>
         <nav id="navbar">
             <ul>
@@ -30,20 +30,17 @@
         <div class="work-content">
           <article>
                 <p>
-                    We did this project for a subject at the second year of ESAT, the aim of the project was to create a 3D Procedural city with a 3d framework given by the ESAT while also modifying some parts of the engine with our own code, and making the neded shaders to light up the scene.
+                    This project was a mix of two assignments of the third year at the ESAT. We had to make a playable demo with socre, ealth bar, animations and a list of requerimients but also we had to make two AI algorithms. Added to that we decided to learn something new and we dived into the Unreal Engine 4 networking systems.
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/655I3RTimW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x0T-7U0yDbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
-                    One of the first tasks to acomplish in the project was to program an algorithm to create the city procedurally, my teammate <a class="mention" href="" target="_blank">Marcos Briz</a> that was mostly in charge of that did a fabulous job on that. After that, we had a big city without any color or texture, so ww had to start making the materials fo fill the city with colors.
-                </p>
-                <p>
-                    While making the materials, the major problem we faced was that we just had the data of the geometry that the engine gave to us, and that data didn't included the tangents and bitangents. To solve that we added a Geometry Shader to our pipeline to calculate the tangents and bitangents of each face every time we drew something, we knew that that wasn't the best place for doing that, but it was a good excuse to learn a bit more of Geometry Shaders which we didn't have prior experience with them.
+                    In the project, I worked with <a class="mention" href="" target="_blank">Francisco Lopez</a> that was mostly in charge of making the AI of the gatherers while also programing the buildings, <a class="mention" href="" target="_blank">Victor De LLanos</a> that was in charge of making the general AI of the warriors, characters and also making his custom pathfinding algorithm using A*.
                 </p>
                 <p>
-                    Another major feature of the demo was the deferred lightning, it was the first time that we dived in that area. But without leaving aside the post-processes, that weren't complex ones but at least they helped to a better understanding of a how post processing pipelines usually work.
+                    <a class="mention" href="" target="_blank">Marcos Briz</a> that made an algorithm to generate the playable world while also filling it with trees. I worked on the main menu and the other menus while learning how to use Steam to host/find servers.
                 </p>
                 <p>
-                    There was a failed try to make a water shader with fresnel but without reflections, and definitely, way more little features that I will be missing.
+                    The most difficult part for all of us was making the game work properly over the network, since it was our first time, we had to change some habits to make the game work online.
                 </p>
             </br>
             </article>
