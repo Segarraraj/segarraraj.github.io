@@ -29,27 +29,17 @@
         </nav> 
         <div class="work-content">
           <article>
-                <p>
-                    Definitely this has been the most challengin project we have made, but that made me to love it. We had to make a game engine/renderer from scratch, or barely from scratch, we could use third party libraries. Also since I wasn't alone and I was with my beloved friend <a class="mention" href="">Marcos Briz</a> the projact was much easier.
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TDeEiO8HnZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>
-                    We started making the window using <a href="https://github.com/floooh/sokol/blob/master/sokol_app.h" class="mention" target="_blank">Sokol</a>, which also provided us with a rendering context for OpenGL. After that we made the flow of the aplication making it that the Update for the next thread runs while we are still rendering the scene. Here is where <a href="https://github.com/pplux/px/blob/master/px_sched.h" target="_blank">PX Sched</a> and <a href="https://github.com/hrydgard/minitrace" target="_blank">Minitrace</a> came handy. We used the first one to sync different tasks running them in different threads, and the second one to really make sure that that was happening.
-                </p>
+                <p>Definitely this has been the most challengin project we have made, but that made me to love it. We had to make a game engine/renderer from scratch, or barely from scratch, we could use third party libraries. Also since I wasn't alone and I was with my beloved friend <a class="mention" href="">Marcos Briz</a> the projact was much easier.</p>
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TDeEiO8HnZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>We started making the window using <a href="https://github.com/floooh/sokol/blob/master/sokol_app.h" class="mention" target="_blank">Sokol</a>, which also provided us with a rendering context for OpenGL. After that we made the flow of the aplication making it that the Update for the next thread runs while we are still rendering the scene. Here is where <a href="https://github.com/pplux/px/blob/master/px_sched.h" target="_blank">PX Sched</a> and <a href="https://github.com/hrydgard/minitrace" target="_blank">Minitrace</a> came handy. We used the first one to sync different tasks running them in different threads, and the second one to really make sure that that was happening.</p>
                 <img src="../../resources/img/work/badboy/multithread.png">
                 <span><i>Renderer life flow</i></span>
-                <p>
-                    Another library that came handy was <a href="https://github.com/ocornut/imgui">IMGUI</a> that provided us with the necessary tools to make a kind of editor to interact with parts of the engine while being at runtime.
-                </p>
-                <p>
-                    With those first steps we started working with geometry, textures and shaders for being able to draw into the window. With that done, we started with the <b>ECS</b>, inspired by a really masterclass of ECS and data structures of our teacher Jose Luis we decided to take the complex aproach, what turned into a few of fun and good nights in front of the computer.
-                </p>
-                <p>
-                    Once the ECS was working smooth, we just had to make components (or that's what we thought), and the first ones came, also with systems, like tranform components with parent and child systems. Light components with a system to render them with deferred rendering and our beloved camera with his own component.
-                </p>
-                <p>
-                    Finally, we spiced it up with, shadows, post-processes, temporal anti-aliasing, PBR, a skybox and an editor.
-                </p>
+                <p>Another library that came handy was <a href="https://github.com/ocornut/imgui">IMGUI</a> that provided us with the necessary tools to make a kind of editor to interact with parts of the engine while being at runtime.</p>
+                <p>With those first steps we started working with geometry, textures and shaders for being able to draw into the window. With that done, we started with the <b>ECS</b>, inspired by a really masterclass of ECS and data structures of our teacher Jose Luis we decided to take the complex aproach, what turned into a few of fun and good nights in front of the computer.</p>
+                <p>Once the ECS was working smooth, we just had to make components (or that's what we thought), and the first ones came, also with systems, like tranform components with parent and child systems. Light components with a system to render them with deferred rendering and our beloved camera with his own component.</p>
+                <p>Finally, we spiced it up with, shadows, post-processes, temporal anti-aliasing, PBR, a skybox and an editor.</p>
                 <img src="../../resources/img/work/badboy/suzanne.gif">
                 <span><i>Our beloved friend Suzanne</i></span>
                 </br>
