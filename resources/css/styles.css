@@ -515,6 +515,7 @@ nav ul li a:hover {
 .archive-year {
     padding: 1.3em 0 .7em;
     font-size: 1.9em;
+    font-variant-numeric: tabular-nums;
 }
 
 .archive-entry {
