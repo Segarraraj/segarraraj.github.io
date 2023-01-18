@@ -525,6 +525,7 @@ nav ul li a:hover {
     position: absolute;
     margin: 0;
     top: 50%;
+    font-variant-numeric: tabular-nums;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     opacity: .5;
