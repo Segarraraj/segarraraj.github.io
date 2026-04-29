@@ -500,6 +500,13 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+#archive img + span {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin-top: 4px;
+}
+
 #archive-tittle {
     padding: 0 0 .3em;
     font-size: 2.2em;
