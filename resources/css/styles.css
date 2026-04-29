@@ -351,6 +351,11 @@ nav ul li a:hover {
     align-items: center;
 }
 
+
+.work-content ul li {
+    overflow-x: visible;
+}
+
 .work-content p {
     line-height: 1.5;
     margin: 12px;
@@ -457,6 +462,12 @@ nav ul li a:hover {
 #archive p {
     text-align: justify;
     margin: .8em 0;
+    overflow: hidden;
+}
+
+#archive ul li, #archive ol li {
+    overflow-x: visible;
+    margin: .4em 0;
 }
 
 #archive code {
@@ -467,6 +478,11 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     padding: .1rem .3rem .2rem;
     border-radius: 8px;
+}
+
+#archive img {
+    display: block;
+    margin: 0 auto;
 }
 
 #archive-tittle {
