@@ -380,6 +380,11 @@ nav ul li a:hover {
     margin: 12px;
 }
 
+.work-content span {
+    margin-top: 4px;
+    font-size: 0.85em;
+}
+
 /* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 20px;
