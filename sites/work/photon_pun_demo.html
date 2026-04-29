@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jorge Segarra - Photon Pun</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jorge Segarra Portfolio">
+    <meta name="keywords" content="Jorge, Segarra, Portfolio">
+    <meta name="author" content="Jorge Segarra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../resources/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../resources/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../resources/icon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="../../resources/css/styles.css">
+    <script src="https://kit.fontawesome.com/a3c4993b30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="section-header">
+            <h1>Photon Pun</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="../../index.html#me">Me</a></li>
+                <li><a href="../../index.html#work">Work</a></li>
+                <li><a href="../blog/archive.html">Blog</a></li>
+            </ul>
+        </nav> 
+        <div class="work-content">
+            <article>
+                <p>This project was part of an assignment at Saxion. As the <a href="vulkan_demo.html" target="_blank">Vulkan Demo</a>, we had the freedom to choose whatever we want to learn. In this case, I decided to learn a bit of networking in Unity using Photon Pun.</p>
+                <p>The aim of the demo was just a simple game without art, VFX, sound, UI or whatever and focus on the network part, but as the time passed and I was enjoying the process, I decided to go all-in and produce a "full" demo, with animations, art, etc. Which helped me to learn new things about Unity or learn a bit more about things that I hadn't used that much, like Animation Rigging, Cinemachine, Animators.</p>
+
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Fxnu021GbzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <p>Since I was focused on making just a simple demo and learning the basics of networking using Photon Pun, I didn't care that much about the "network architecture", meaning that each player controls his life and ammo, and when I wanted to change it was late.</p>
+                <p>Although I think that I did a good job with the synchronization of animations, avoiding components like the "animator visualize" that can stress more the network, and synchronizing them manually.</p>
+                <p>In conclusion, after knowing a bit about networking in UE4, I think that using Photon Pun is easier, but it's also easier to create a worse network architecture.</p>
+                <p>Now I will show some of the challenges I had to overcome.</p>
+
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XfoIszzqTds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <p>In this case, shooting was a challenge from the beginning, from physics to networking.</p>
+                <p>Since the bullets were small objects moving fast, sometimes they jumped the thin colliders. Changing the collision detection to continuos just made the game very laggy, so, for solving that I had to cast a box in the direction the bullet was moving. If it hits something we have a hit, but if it doesn't the bullet can keep going, I found this way, less laggy than continuous collision detection and more reliable than the first one.</p>
+                <p>The next problem with the shooting mechanic was the aiming, the way is done in the demo is that while the player presses the right button a raycast is shot from the camera to the centre of the screen. Either the point of a collision or if the ray reaches the maximum distance, that position is used to move a gameobject to that position, that gameobject is used altogether with animation rigging to make the hand that is holding the weapon, the head and the body to aim at that gameobject, making that the weapon of the character aims perfectly to the point the player is aiming, so when the bullet is spawned at the tip of the weapon is already facing the correct direction.</p>
+                <p>This worked well in the local machine, but not that well when playing with others since the position of the aiming gameobject wasn't synchronized through the network the players were shooting in the wrong directions and then the bullet moved in the right direction. To solve that, I just had to synchronize the position of that gameobject with the rest of the players.</p>
+            </article>
+        </div>   
+        <div id="footer">
+            <span>Made with</span>
+            <span id="love"><i class="fas fa-heart"></i></span>
+            <span>By me</span>
+            <div class="social-media">
+                <a href="https://twitter.com/SalamandroxFTW" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/jorge-segarra-raro-a7806b166" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Segarraraj" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="mailto:jsegra9@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="../../resources/js/main.js"></script>
+</body>
+</html>
