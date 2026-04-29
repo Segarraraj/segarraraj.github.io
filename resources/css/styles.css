@@ -11,8 +11,8 @@
     --blue: #233D4D;
     --yellow:#FCCA46;
     --orange: #FE7F2D;
-    --light-text-color: #F2F2F2;
-    --dark-text-color: #080808;
+    --light-text-color: #e6e6e6;
+    --dark-text-color: #2b2b2b;
 }
 
 * {
@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
@@ -381,6 +381,109 @@ nav ul li a:hover {
     background-color: #a8bbbf;
 }
 
+/* BLOG HEADER */
+.blog-header {
+    width: 100%;
+    color: var(--dark-text-color);
+    background-color: var(--yellow);    
+    box-shadow: 0 3px 7px -1px rgb(0 0 0 / 10%);
+}
+
+.blog-header-wrappper {
+    width: 55%;
+    margin: 0 auto;
+    padding: 0 6.5em .8em;
+}
+
+.blog-tittle {
+    font-size: 2.0em;
+    padding: 1.7em .0em 0.9em .0em;
+}
+.blog-navigation { 
+    padding-bottom: .7em;
+    float: left;
+}
+
+.blog-navigation ul {
+    display: inline;
+}
+
+.blog-navigation ul li {
+    float: left;
+    opacity: 0.5;
+    padding: .3em;
+    margin-right: .7em;
+}
+
+.blog-navigation ul li:hover {
+    opacity: 1.0;    
+}
+
+.blog-navigation ul li a {
+    text-decoration: none;
+    color: var(--dark-text-color);
+}
+
+.blog-media {
+    float: right;
+}
+
+.blog-media a {
+    text-decoration: none;
+    color: var(--dark-text-color);
+    font-size: 2.0em;
+    margin: 0 .15em;
+    opacity: 0.5;
+}
+
+.blog-media a:hover {
+    opacity: 1.0;
+}
+
+/* BLOG ARCHIVE */
+#archive { 
+    width: 55%;
+    margin: 0 auto;
+    padding: 0 6.5em .8em;    
+    min-height: 100vh;
+    color: var(--dark-text-color);
+}
+
+#archive-tittle {
+    padding: 1.5em 0 .3em;
+    font-size: 2.2em;
+}
+
+.archive-year {
+    padding: 1.3em 0 .7em;
+    font-size: 1.9em;
+}
+
+.archive-entry {
+    position: relative;
+}
+
+.archive-entry span {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: .5;
+}
+
+.archive-entry a {
+    color: var(--dark-text-color);
+    text-decoration: none;
+    font-size: 1.9em;
+    opacity: .5;
+    margin-left: 2.7em;
+}
+
+.archive-entry a:hover {
+    opacity: 1;
+}
+
 @media (max-width: 600px) {
     #me div {
         width: 90%;
@@ -422,5 +525,15 @@ nav ul li a:hover {
 
     .card article p {
         margin-bottom: 24px;
+    }
+
+    .blog-header-wrappper {
+        width: 85%;
+        padding: 0;
+    }
+
+    #archive {
+        width: 85%;
+        padding: 0;
     }
 }
