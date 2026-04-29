@@ -11,7 +11,7 @@
     --blue: #233D4D;
     --yellow:#FCCA46;
     --orange: #FE7F2D;
-    --light-text-color: #F2F2F2;
+    --light-text-color: #e6e6e6;
     --dark-text-color: #2b2b2b;
 }
 
@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
@@ -381,7 +381,7 @@ nav ul li a:hover {
     background-color: #a8bbbf;
 }
 
-/* BLOG */
+/* BLOG HEADER */
 .blog-header {
     width: 100%;
     color: var(--dark-text-color);
@@ -438,6 +438,50 @@ nav ul li a:hover {
 
 .blog-media a:hover {
     opacity: 1.0;
+}
+
+/* BLOG ARCHIVE */
+#archive { 
+    width: 55%;
+    margin: 0 auto;
+    padding: 0 6.5em .8em;    
+    min-height: 100vh;
+    color: var(--dark-text-color);
+}
+
+#archive-tittle {
+    padding: 1.5em 0 .3em;
+    font-size: 2.2em;
+}
+
+.archive-year {
+    padding: 1.3em 0 .7em;
+    font-size: 1.9em;
+}
+
+.archive-entry {
+    position: relative;
+}
+
+.archive-entry span {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: .5;
+}
+
+.archive-entry a {
+    color: var(--dark-text-color);
+    text-decoration: none;
+    font-size: 1.9em;
+    opacity: .5;
+    margin-left: 2.7em;
+}
+
+.archive-entry a:hover {
+    opacity: 1;
 }
 
 @media (max-width: 600px) {
