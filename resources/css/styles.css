@@ -526,4 +526,14 @@ nav ul li a:hover {
     .card article p {
         margin-bottom: 24px;
     }
+
+    .blog-header-wrappper {
+        width: 85%;
+        padding: 0;
+    }
+
+    #archive {
+        width: 85%;
+        padding: 0;
+    }
 }
