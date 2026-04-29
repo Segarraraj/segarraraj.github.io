@@ -216,6 +216,10 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+.card a {
+    overflow: hidden;
+}
+
 .card .thumb {
     height: 250px;
     width: 350px;
